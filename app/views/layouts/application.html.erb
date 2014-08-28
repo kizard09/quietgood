@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuietGood</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</head>
+<body>
+
+<h1>quiet<strong>good</strong></h1>
+<nav id="navigation">
+<a class="menu_button" href="#" onclick="toggleNav(); return true;">Menu</a>
+	<ul id="custom-menu" role="navigation">
+		<li class="custom-menu1"> 
+	      <a href="#">
+	            <div class="content"> 
+	            <h2 class="link">inspire</h2>
+	            <h2 class="secondary">blog</h2> 
+	            </div>
+	        </a> 
+	    </li> 
+	     
+		<li class="custom-menu2"> 
+	        <a href="#">
+	            <div class="content"> 
+	            <h2 class="link">act</h2>
+	            <h2 class="secondary">people</h2> 
+	            </div>
+	        </a> 
+	    </li> 
+	 
+	 	<li class="custom-menu3"> 
+	        <a href="#">
+	            <div class="content"> 
+	            <h2 class="link">smile</h2>
+	            <h2 class="secondary">photos of day</h2> 
+	            </div>
+	        </a> 
+	    </li> 
+	 
+	 	<li class="custom-menu4"> 
+	        <a href="#">
+	            <div class="content"> 
+	            <h2 class="link">read</h2>
+	            <h2 class="secondary">"Book Title"</h2> 
+	            </div>
+	        </a> 
+	    </li>     
+	 
+		<li class="custom-menu5"> 
+	        <a href="#">
+	            <div class="content"> 
+	            <h2 class="link">connect</h2>
+	            <h2 class="secondary">other resources</h2> 
+	            </div>
+	        </a> 
+	    </li>     
+	</ul> 
+</nav>
+<form class="search" role="search">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn">Search</button>
+      </form>
+    </div>
+
+
+<div class = "fore">
+
+<%= yield %>
+
+</div>
+</body>
+
+</html>
