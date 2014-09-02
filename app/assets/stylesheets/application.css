@@ -16,11 +16,23 @@
 .search {
 	height: 20px;
 	width: 130px;
-
+	display: block;
 }
 
 .form-group {
 	float:right;
+}
+
+.t {
+	font-size: 45px;
+	float: right;
+	margin-right: 10px;
+}
+
+.s {
+	font-size: 45px;
+	float: left;
+	margin-left: 10px;
 }
 
 button {
@@ -28,6 +40,8 @@ button {
 	border-radius: 110px;
 	opacity: 0.7;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    height: 50px;
+
 }
 
 button:hover {
@@ -35,9 +49,17 @@ button:hover {
 }
 
 .btn {
-	color: lightblue;
+	color: blue;
 	font-weight: bold;
-	background-color: white;
+	background-color: lightblue;
+}
+
+input {
+	border-radius: 110px;
+	text-align: center;
+	height:30px;
+	font-size: 12px;
+	color: darkblue;
 }
 
 .fore {
@@ -97,6 +119,7 @@ text-decoration: none;
 
 #custom-menu h2.secondary:hover {
 	opacity: 1;
+	font-size: 18px;
 }
 
 .content { 
@@ -113,6 +136,7 @@ li.custom-menu1{
 background-image: url('inspire.png');
 opacity: 0.7;
 }
+
 li.custom-menu1:hover{ 
 opacity: 1;
 }
@@ -128,7 +152,7 @@ background-size: 100%;
 } 
 
 li.custom-menu2:hover { 
-opacity: 1;
+	opacity: 1;
 } 
  
 /* smile */
@@ -185,6 +209,20 @@ p.text {
 	word-wrap:break-word;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
+}
+
+.header a {
+	text-decoration: none;
+	color: #000066;
+
+}
+
+.header a:active{
+	color: #000066;
+}
+
+.header a:active{
+	color: #000066;
 }
 
 h1{

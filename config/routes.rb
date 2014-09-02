@@ -56,5 +56,9 @@ Rails.application.routes.draw do
 root to: 'static_pages#home'
 
 get '/home' => 'static_pages#home'
-
+get '/connect' => 'static_pages#connect'
+get '/smile' => 'static_pages#smile'
+get '/read' => 'static_pages#read'
+get '/act' => 'static_pages#act'
+get '/inspire' => 'static_pages#inspire'
 end
