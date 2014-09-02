@@ -278,4 +278,7 @@ h1{
     color: #58cbdb;
     text-decoration: none;
 }
+p.text {
+	font-size: 20px;
+}
 }
