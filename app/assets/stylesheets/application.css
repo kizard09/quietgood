@@ -278,6 +278,8 @@ h1{
     color: #58cbdb;
     text-decoration: none;
 }
+}
+@media only screen and (max-width: 400px) {
 p.text {
 	font-size: 20px;
 }
