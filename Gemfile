@@ -2,9 +2,16 @@ source 'https://rubygems.org'
 
 gem 'carrierwave'
 
+gem 'sunspot_rails'
+
+group :development do 
+	gem 'sunspot_solr'
+end
+
 gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.2.0'
+
 
 gem 'autoprefixer-rails'
 
