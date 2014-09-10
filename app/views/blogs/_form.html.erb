@@ -1,0 +1,44 @@
+<%= form_for(@blog) do |f| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+      <ul>
+      <% @blog.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <tr>
+    <td class="field">
+      <b><%= f.label :name, 'name' %></b><br>
+      <%= f.text_field :name %>
+    </td>
+  </tr>
+  <tr>
+    <td class="field">
+      <b><%= f.label :author, 'author' %></b><br>
+      <%= f.text_field :author %>
+    </td>
+  </tr>
+  <tr>
+    <td class="field">
+      <b><%= f.label :date, 'date' %></b><br>
+      <%= f.date_select :date %>
+    </td>
+  </tr>
+  <tr>
+    <td class="field">
+      <b><%= f.label :post, 'post' %></b><br>
+      <%= f.text_area :post%>
+    </td>
+  </tr>
+  <tr>
+    <td class="actions">
+      <%= f.submit %>
+    </td>
+  </tr>
+
+<% end %>
+

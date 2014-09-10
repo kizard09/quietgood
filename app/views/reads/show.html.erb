@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class = 'readshowtitle'><%= @read.name %></h1>
+
+<p class = 'readshow'><%= image_tag(@read.book_url) if @read.book.present? %><%= @read.synopsis %></p>
+
+<p><%= link_to 'Back', reads_path %></p>

@@ -2,6 +2,6 @@
 
 <h1 class = 'heroshowtitle'><%= @hero.name %></h1>
 
-<p class = 'heroshow'><%= image_tag(@hero.image_url) if @hero.image.present? %><%= @hero.description %></p>
+<div class = 'heroshow'><%= image_tag(@hero.image_url) if @hero.image.present? %><%= @hero.description %></div>
 
 <%= link_to 'Back', heros_path %>

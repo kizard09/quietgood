@@ -43,6 +43,6 @@ $(document).ready(function(){
 	$(".custom-menu1").hover(function(){
 		$(".custom-menu1 .link").toggle();
 	});
-});
 
-$('.carousel').carousel()
+});
+	$('.carousel').carousel()

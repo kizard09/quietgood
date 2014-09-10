@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :blogs
+
+  resources :reads
+
   resources :heros
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -57,11 +61,12 @@ Rails.application.routes.draw do
   #   end
 root to: 'static_pages#home'
 
-get '/heroes/edit' => 'heros#edit'
 get '/home' => 'static_pages#home'
 get '/connect' => 'static_pages#connect'
 get '/smile' => 'static_pages#smile'
-get '/read' => 'static_pages#read'
-get '/heroes/index' => 'heros#index'
-get '/inspire' => 'static_pages#inspire'
+get '/read' => 'reads#index'
+get '/heroes' => 'heros#index'
+get '/blog' => 'blogs#index'
+
+
 end
