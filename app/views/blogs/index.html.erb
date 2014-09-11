@@ -11,10 +11,16 @@
     <tr><td><h6>To submit your own post for consideration contact us <button class = "here"> <address><a href = 'mailto:kathy.izard@me.com?subject= Inspire&body= Posts of 1000 words or less will be considered. Please paste text in the body of the email. We cannot accept attachments. Thank you.'>here</address></button></h6></td></tr>
     <% @blogs.each do |blog| %>
       <tr>
-        <td class = 'blogindex'><b><%= link_to blog.name, blog %></b>, by <%= blog.author %> <em><%= blog.date %></em></td>
+        <td class = 'blogindex'>
+          <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+          <em><%= blog.date %></em>
+        </td>
       </tr>
       <tr>
-        <td><div class = 'ellipsis'><%= blog.post %><b><%= link_to 'Read More', blog %></b></div>
+        <td>
+          <div class = 'ellipsis'>
+            <%= blog.post %><b><%= link_to 'Read More', blog %></b>
+          </div>
         </td>
       </tr>
     <% end %>

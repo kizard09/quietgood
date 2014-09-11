@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  root to: 'static_pages#home'
+
+get '/home' => 'static_pages#home'
+get '/connect' => 'static_pages#connect'
+get '/smile' => 'static_pages#smile'
+get '/read' => 'reads#index'
+get '/heroes' => 'heros#index'
+get '/blogs' => 'blogs#index'
+
   resources :blogs
 
   resources :reads
@@ -59,14 +68,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-root to: 'static_pages#home'
-
-get '/home' => 'static_pages#home'
-get '/connect' => 'static_pages#connect'
-get '/smile' => 'static_pages#smile'
-get '/read' => 'reads#index'
-get '/heroes' => 'heros#index'
-get '/blog' => 'blogs#index'
 
 
 end

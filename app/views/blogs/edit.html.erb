@@ -8,5 +8,10 @@
 <tbody>
 <%= render 'form' %>
 </tbody>
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+</table>
+<br>
+<%= link_to 'Back', blogs_path %> |
+<%= link_to 'Delete', @blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+
+

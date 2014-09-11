@@ -382,7 +382,8 @@ h6{
 	word-wrap: break-word;
 }
 .ellipsis {
-    width: 60%; 
+    width: 100%; 
+    height:20%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
