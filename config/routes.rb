@@ -6,6 +6,8 @@ get '/connect' => 'static_pages#connect'
 get '/smile' => 'static_pages#smile'
 get '/read' => 'reads#index'
 get '/heroes' => 'heros#index'
+get '/heroes/new' => 'heros#new'
+get '/heroes/:id/edit' => 'heros#edit'
 get '/blogs' => 'blogs#index'
 
   resources :blogs

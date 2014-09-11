@@ -35,12 +35,14 @@
     <tr>
       <td>
         <div class = 'ellipsis'>
-          <%= blog.post %><b><%= link_to 'Read More', blog %></b>
-          <% end %>
+          <%= simple_format(blog.post) %>
         </div>
+        <div class = "readmore"><b><%= link_to 'Read More', blog %></b></div>
+        <br>
+        <br>
       </td>
     </tr>
-
+    <% end %>
   </tbody>
 </table>
 

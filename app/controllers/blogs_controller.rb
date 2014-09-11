@@ -5,6 +5,9 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    def nl2br(s)
+      s.gsub(/\n/, '<br>')
+    end
   end
 
   # GET /blogs/1
