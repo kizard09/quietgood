@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
-
-gem 'acts_as_ferret', '>= 0.5'
-
+gem 'acts_as_ferret'
 gem 'carrierwave'
 
 gem 'sunspot_rails'
