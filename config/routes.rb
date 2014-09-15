@@ -4,11 +4,12 @@ Rails.application.routes.draw do
 get '/home' => 'static_pages#home'
 get '/connect' => 'static_pages#connect'
 get '/smile' => 'static_pages#smile'
-get '/read' => 'reads#index'
+get '/reads' => 'reads#index'
 get '/heroes' => 'heros#index'
 get '/heroes/new' => 'heros#new'
 get '/heroes/:id/edit' => 'heros#edit'
 get '/blogs' => 'blogs#index'
+get '/reads/:id/edit' => 'reads#edit'
 
   resources :blogs
 

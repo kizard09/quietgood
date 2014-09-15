@@ -1,5 +1,4 @@
 class Read < ActiveRecord::Base
 	mount_uploader :book, PhotoUploader
-	belongs_to :heros
-	has_many :blogs 
+	# acts_as_ferret :fields => [ :name, :book, :synopsis ]
 end

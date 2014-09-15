@@ -13,8 +13,8 @@
 <div id="columns">
   <% @reads.each do |read| %>
     <div class = "readsindex">
-    <%= link_to image_tag(read.book), read %>
-    </div>
+    <h5><%= link_to image_tag(read.book), read %></h5>
+     </div>
     <br>
   <% end %>
 </div>

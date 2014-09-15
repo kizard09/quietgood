@@ -35,7 +35,7 @@
     <tr>
       <td>
         <div class = 'ellipsis'>
-          <%= simple_format(blog.post) %>
+          <%= (blog.post).gsub(/\n/, '<br>') %>
         </div>
         <div class = "readmore"><b><%= link_to 'Read More', blog %></b></div>
         <br>

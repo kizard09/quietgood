@@ -5,11 +5,13 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
-    def nl2br(s)
-      s.gsub(/\n/, '<br>')
-    end
   end
-
+  # def results
+  #   @query = Blog.search do
+  #       fulltext params[:search]
+  #   end
+  #   @blogs = @query.results
+  # end
   # GET /blogs/1
   # GET /blogs/1.json
   def show
