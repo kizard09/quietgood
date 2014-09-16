@@ -218,7 +218,7 @@ body {
 	color: #000066;
 	background-image: url('PrayerFlag2.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 1500px 100%;
 	/*overflow: hidden;*/
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -514,7 +514,7 @@ h5, h1, h6 {
 	width:85%;
 }
 h1{
-	font-size: 25px;
+	font-size: 18px;
 }
 #navigation {
    	background-color: red;
@@ -526,7 +526,7 @@ h1{
     z-index: 1;
 }
 body{
-	background-size: cover;
+	background-size:800px 100%; 
 }
 .menu_button{
 	opacity: 1;
@@ -582,9 +582,6 @@ h5, h1, h6 {
 }
 li#custom-menu1:hover{ 
 	background-color: transparent;
-}
-body {
-	height: 1000px;
 }
 
 #navigation {
