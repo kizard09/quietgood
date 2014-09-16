@@ -2,6 +2,6 @@
 
 <h1 class = 'readshowtitle'><%= @read.name %></h1>
 
-<div class = 'readshow'><%= image_tag(@read.book_url) if @read.book.present? %><%= @read.synopsis %></div>
+<div class = 'readshow'><%= image_tag(@read.book_url) if @read.book.present? %><%= simple_format(@read.synopsis) %></div> 
 
 <%= link_to 'Back', reads_path %>
