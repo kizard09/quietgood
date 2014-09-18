@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 
+
 var originalNavClasses;
 
 function toggleNav() {
@@ -46,3 +47,4 @@ $(document).ready(function(){
 
 });
 	$('.carousel').carousel()
+

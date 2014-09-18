@@ -6,16 +6,28 @@
     </tr>
   </thead>
   <tbody>
-    <tr><td><h5>Books we love by authors who inspire.</h5></td></tr>
-    <tr><td><h6><em>No advertising accepted</em></h6></td></tr>
+    <tr>
+      <td>
+        <h5>Books we love by authors who inspire.</h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6><em>No advertising accepted</em></h6>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="columns">
+          <% @reads.each do |read| %>
+            <div class = "readsindex">
+              <div><%= link_to read.name, read %></div>
+              <div><%= link_to image_tag(read.book), read %></div>
+            </div>
+          <% end %>
+        </div>
+      </td>
+    </tr>
   </tbody>
 </table>
-<div id="columns">
-  <% @reads.each do |read| %>
-    <div class = "readsindex">
-    <h5><%= link_to image_tag(read.book), read %></h5>
-     </div>
-    <br>
-  <% end %>
-</div>
 
