@@ -91,8 +91,6 @@ h5.welcome{
 }
 
 #custom-menu { 
-	height: 100px;
-	width:67%; 
 	right:0;
 	position:fixed;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -443,7 +441,7 @@ h1{
 }
 
 #navigation ul.expanded {
-	display: inline;
+	display: block;
 }
 
 #navigation li a {
@@ -482,8 +480,8 @@ h5, h1, h6 {
 #navigation {
    	background-color: red;
     border-radius: 110px;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     position: fixed;
     right:0;
     z-index: 1;
@@ -510,8 +508,7 @@ h1{
     margin-bottom: 0;
 }
 
-#navigation ul.expanded {
-	display: inline;
+#custom-menu li{
 	height:75px;
 	width:75px;
 	border-radius: 75px;
