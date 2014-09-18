@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <h1 class = 'readshowtitle'><%= @read.name %></h1>
+<br>
 
 <div class = 'readshow'><%= image_tag(@read.book_url) if @read.book.present? %><%= simple_format(@read.synopsis) %></div> 
 
-<%= link_to 'Back', reads_path %>
+<p class = "back"><%= link_to 'Back', reads_path %></p>

@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <h1 class = 'heroshowtitle'><%= @hero.name %></h1>
-
+<br>
 <div class = 'heroshow'>
 	<div class = 'heroshowimage'><%= image_tag(@hero.image_url) if @hero.image.present? %></div>
-	<div class = 'heroshowdescription'><%= @hero.description %></div>
+	<div class = 'heroshowdescription'><%= simple_format (@hero.description) %></div>
 
-<%= link_to 'Back', heros_path %>
+
+<p class = "back"><%= link_to 'Back', heros_path %></p>
