@@ -479,7 +479,7 @@ h5, h1, h6 {
 }
 
 @media only handheld {
-	#navigation {
+#navigation {
    	background-color: red;
     border-radius: 110px;
     height: 100px;
@@ -512,6 +512,9 @@ h1{
 
 #navigation ul.expanded {
 	display: inline;
+	height:75px;
+	width:75px;
+	border-radius: 75px;
 }
 
 #navigation li a {
