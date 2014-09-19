@@ -12,6 +12,12 @@
   <% end %>
   <tr>
     <td class="field">
+    <b><%= f.label :image, 'photo' %></b><br>
+    <%= f.file_field :image %>
+  </td>
+</tr>
+  <tr>
+    <td class="field">
       <b><%= f.label :name, 'name' %></b><br>
       <%= f.text_field :name %>
     </td>

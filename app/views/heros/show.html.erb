@@ -3,8 +3,22 @@
 <h1 class = 'heroshowtitle'><%= @hero.name %></h1>
 <br>
 <div class = 'heroshow'>
-	<div class = 'heroshowimage'><%= image_tag(@hero.image_url) if @hero.image.present? %></div>
-	<div class = 'heroshowdescription'><%= simple_format (@hero.description) %></div>
+	<div class = 'heroshowimage'><%= image_tag(@hero.image_url) if @hero.image.present? %>
+
+	</div>
+
+	<div class = 'heroshowdescription'>
+	<%= simple_format (@hero.description) %>
+	
+	</div>
+		<div class 'herosecondimage'><%= image_tag(@hero.secondimage_url) if @hero.secondimage.present? %>
+		</div>
+	<br>
+	<p class = "back"><%= link_to 'Back', heros_path %></p>
+
+</div>
 
 
-<p class = "back"><%= link_to 'Back', heros_path %></p>
+
+
+

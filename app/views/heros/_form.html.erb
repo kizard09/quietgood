@@ -28,6 +28,12 @@
     <%= f.text_area :description%>
   </td>
 </tr>
+  <tr>
+  <td class="field">
+    <b><%= f.label :secondimage, 'another photo' %></b><br>
+    <%= f.file_field :secondimage %>
+  </td>
+  </tr>
 <tr>
   <td class="actions">
     <%= f.submit %>

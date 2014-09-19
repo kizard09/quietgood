@@ -19,7 +19,7 @@
         <h6>To submit your own post for consideration contact us 
           <button class = "here"> 
             <address>
-              <a href = 'mailto:kathy.izard@me.com?subject= Inspire&body= Posts of 1000 words or less will be considered. Please paste text in the body of the email. We cannot accept attachments. Thank you.'>here</a>
+              <a href = 'mailto:connect@quietgood.org?subject= Inspire&body= Posts of 1000 words or less will be considered. Please paste text in the body of the email. We cannot accept attachments. Thank you.'>here</a>
             </address>
           </button>
         </h6>
@@ -35,9 +35,11 @@
     <tr>
       <td>
         <div class = 'ellipsis'>
-          <%= blog.post %>
+          <%= blog.post.html_safe %>
         </div>
-        <div class = "readmore"><b><%= link_to 'Read More', blog %></b></div>
+        <div class = "readmore">
+          <em><%= link_to 'Read More', blog %></em>
+        </div>
         <br>
         <br>
       </td>

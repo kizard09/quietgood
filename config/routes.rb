@@ -6,10 +6,12 @@ get '/connect' => 'static_pages#connect'
 get '/smile' => 'static_pages#smile'
 get '/reads' => 'reads#index'
 get '/heroes' => 'heros#index'
-get '/heroes/new' => 'heros#new'
-get '/heroes/:id/edit' => 'heros#edit'
-get '/blogs' => 'blogs#index'
-get '/reads/:id/edit' => 'reads#edit'
+# get '/heroes/kathyizardonly/new' => 'heros#new'
+# get '/heroes/:id/kathyizardonly/edit' => 'heros#edit'
+# get '/reads/:id/kathyizardonly/edit' => 'reads#edit'
+# get '/reads/kathyizardonly/new' => 'reads#new'
+# get '/blogs/kathyizardonly/new' => 'blogs#new'
+# get '/blogs/:id/kathyizardonly/edit' => 'blogs#edit'
 
   resources :blogs
 
