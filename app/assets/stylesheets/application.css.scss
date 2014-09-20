@@ -379,9 +379,20 @@ p a:visited, .back a:visited{
 	font-size:20px;
 }
 div.carousel-inner{
-	width:100%;
 	margin-bottom: 20px;
-	position:relative;
+	width: 100%;
+	margin-right: 0;
+}
+div#myCarousel.carousel.slide {
+	width: 100%;	
+
+}
+.carousel-inner img{
+	width:100%;
+}
+#myCarousel{
+	height: 50%;
+	width: 100%;
 }
 .back{
 	margin-left: 10px;
@@ -399,18 +410,14 @@ div.carousel-inner{
 	background: rgba(white, 0.7);
 }
 
-#myCarousel {
-	width:auto;
-	position: relative;
-}
-
 h4 {
 	padding-left:10px;
 	margin-top: -10px;
 }
-h5{
+#fore h5{
 	padding: 10px;
 	word-wrap: break-word;
+	float:left;
 }
 h6{
 	padding: 10px;
