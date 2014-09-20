@@ -14,14 +14,13 @@
 ActiveRecord::Schema.define(version: 20140920002520) do
 
   create_table "blogs", force: true do |t|
-    t.string   "name"
+    t.text   "name"
     t.date     "date"
     t.text     "post"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "author"
     t.string   "image"
-    t.text     "location"
   end
 
   create_table "heros", force: true do |t|

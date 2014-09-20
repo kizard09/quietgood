@@ -211,7 +211,7 @@ body {
 	color: #000066;
 	background-image: url('PrayerFlag2.jpeg');
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
@@ -271,7 +271,9 @@ p a:visited, .back a:visited{
 	float:left;
 	padding: 10px;
 }
-
+.heroindex {
+	padding-bottom: 20px;
+}
 .heroindex a {
 	text-decoration: none;
 	color: #000066;
@@ -462,7 +464,7 @@ td{
     z-index: 1;
 }
 body{
-	background-size: 100% 100%;
+	background-size: 1100px;
 }
 #fore{
 	width:80%;
