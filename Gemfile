@@ -5,6 +5,9 @@ gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.2.0'
 
+gem 'aws-sdk'
+
+gem 'unicorn'
 
 gem 'autoprefixer-rails'
 
@@ -46,7 +49,7 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-	gem 'sqlite3', '1.3.9'
+	gem 'pg'
 end
 
 group :production do
