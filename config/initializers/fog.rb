@@ -1,9 +1,9 @@
 CarrierWave.configure do |config| 
   config.fog_credentials = { 
     :provider               => 'AWS', 
-    :aws_access_key_id      => 'AKIAJCHAJMQKLJNQDB6A', 
-    :aws_secret_access_key  => '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', 
+    :aws_access_key_id      => ENV['S3_KEY'], 
+    :aws_secret_access_key  => ENV['S3_SECRET'], 
   } 
-  config.fog_directory  = 'quietgood-assets' 
+  config.fog_directory  = ENV['S3_BUCKET'] 
   config.fog_public     = false 
 end 

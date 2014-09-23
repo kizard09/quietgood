@@ -79,8 +79,9 @@ input {
 	color: darkblue;
 	margin-left: 10px; 
 }
-h5.welcome{
+h5{
 	font-size: 24px;
+	float:left;
 }
 
 
@@ -443,21 +444,45 @@ td{
 	font-weight: normal;
 	margin-left: 10px;
 }
-
+td, th {
+	padding: 10px;
+}
 .readmore a:hover{
 	background-color: transparent;
 	text-decoration: none;
 	font-weight: bold;
 }
-
+#notice {
+	padding-left: 10px;
+	color: #000066;
+	padding-top: 10px;
+}
 .welcome, .tibetancaption, h4, h3, .ellipsis, .blogindex, a.ellipsis {
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
 .field {
 	padding-left: 10px;
-}
 
+}
+p {
+	padding-left: 10px;
+}
+h1{
+	float:left;
+}
+.tibetancaption{
+	float:left;
+}
+#fore a{
+	color:#000066;
+}
+#fore a:active{
+	color:#000066;
+}
+#fore a:hover{
+	font-weight: bold;
+}
 @media only screen and (max-width: 835px) {
 #navigation {
    	background-color: red;
