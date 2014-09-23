@@ -376,6 +376,7 @@ p a:visited, .back a:visited{
 	width: 30px;
 	opacity: 1;
 	font-size:20px;
+	color:white;
 }
 div.carousel-inner{
 	margin-bottom: 20px;
@@ -578,7 +579,7 @@ body{
 	float: right;
 }
 h1{
-	font-size: 35px;
+	font-size: 25px;
 }
 h5.welcome{
 	font-size: 15px;
@@ -614,5 +615,8 @@ h2:hover{
 h5, h1, h6 {
 	white-space: wrap;
 	word-wrap: break-word;
+}
+h5 {
+	font-size: 15px;
 }
 }
