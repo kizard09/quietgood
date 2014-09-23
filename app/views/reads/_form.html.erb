@@ -1,4 +1,4 @@
-<%= form_for(@read), :html => {:multipart => true} do |f| %>
+<%= form_for @read, :html => {:multipart => true} do |f| %>
   <% if @read.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@read.errors.count, "error") %> prohibited this book from being saved:</h2>
