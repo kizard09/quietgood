@@ -5,9 +5,9 @@ gem 'devise'
 
 gem 'bootstrap-sass', '~> 3.2.0'
 
-gem 'aws-sdk'
-
-gem 'unicorn'
+gem 'aws-sdk', '~>1.36.1'
+gem 'fog'
+gem "mini_magick"
 
 gem 'autoprefixer-rails'
 
