@@ -3,6 +3,8 @@ gem 'carrierwave'
 
 gem 'devise'
 
+gem 'figaro'
+
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'aws-sdk', '~>1.36.1'

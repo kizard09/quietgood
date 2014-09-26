@@ -374,13 +374,14 @@ p a:visited, .back a:visited{
 	float:none;
 }
 .carousel-control{
-	top:50%;
+	margin-top:50%;
 	position: absolute;
 	height:30px;
 	width: 30px;
 	opacity: 1;
 	font-size:20px;
 	color:white;
+	-moz-margin-start: 15%;
 }
 div.carousel-inner{
 	margin-bottom: 20px;
@@ -397,6 +398,7 @@ div#myCarousel.carousel.slide {
 #myCarousel{
 	height: 50%;
 	width: 100%;
+	display: -moz-deck;
 }
 .back{
 	margin-left: 10px;
