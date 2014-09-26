@@ -16,6 +16,15 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+a {
+	color: #000066;
+}
+a:visited{
+	color: #000066;
+}
+.homemailing a:hover {
+	font-weight: bold;
+}
 .navbar-form{
 	float:left;
 }
