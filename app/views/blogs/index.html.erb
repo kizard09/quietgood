@@ -25,42 +25,41 @@
         </h6>
       </td>
     </tr>
-    <tr>
-    <tr class = "bloglist">
-      <tr class = "tab-links">
-        <td class= "active"><a href = "#essays">Essays</a></td>
-        <td><a href = "#sermons">Sermons</a></td>
-        <td><a href = "#poems">Poems</a></td>
-      </tr>
-
-      <tr class = "tab-content">
-        <td id ="essays" class = "tab active">essays go here</td>
-
-      <!--   <% @blogs.each do |blog| %>
-        <tr>
-          <td class = 'blogindex'>
-            <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-            <em><%= blog.date %></em>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class = 'ellipsis'>
-              <%= blog.post.html_safe %>
-            </div>
-            <div class = "readmore">
-              <em><%= link_to 'Read More', blog %></em>
-            </div>
-            <br>
-            <br>
-          </td>
-        </tr>
-        <% end %> -->
-        <td id = "sermons" class = "tab">sermons will go here</td>
-        <td id = "poems" class = "tab">poems will go here</td>
-      </tr>
-    </tr>
-  </tr>
   </tbody>
 </table>
+<div class = "bloglist">
+  <ul class = "tab-links">
+    <li class= "active"><a href = "#essays">Essays</a></li>
+    <li><a href = "#sermons">Sermons</a></li>
+    <li><a href = "#poems">Poems</a></li>
+  </ul>
+
+  <div class = "tab-content">
+    <div id ="essays" class = "tab active">essays go here</div>
+
+  <!--   <% @blogs.each do |blog| %>
+    <tr>
+      <td class = 'blogindex'>
+        <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+        <em><%= blog.date %></em>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class = 'ellipsis'>
+          <%= blog.post.html_safe %>
+        </div>
+        <div class = "readmore">
+          <em><%= link_to 'Read More', blog %></em>
+        </div>
+        <br>
+        <br>
+      </td>
+    </tr>
+    <% end %> -->
+    <div id = "sermons" class = "tab">sermons will go here</div>
+    <div id = "poems" class = "tab">poems will go here</div>
+  </div>
+</div>
+
 
