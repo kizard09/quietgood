@@ -37,31 +37,30 @@
   <div class = "tab-content">
     <div id ="essays" class = "tab active">  
       <table>
-        <body>
-    <% @blogs.each do |blog| %>
-    <tr>
-      <td class = 'blogindex'>
-        <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-        <em><%= blog.date %></em>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class = 'ellipsis'>
-          <%= blog.post.html_safe %>
-        </div>
-        <div class = "readmore">
-          <em><%= link_to 'Read More', blog %></em>
-        </div>
-        <br>
-        <br>
-      </td>
-    </tr>
-    <% end %> -->
-  </tbody>
-</table>
-
-  </div>
+        <tbody>
+          <% @blogs.each do |blog| %>
+          <tr>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+              <em><%= blog.date %></em>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class = 'ellipsis'>
+                <%= blog.post.html_safe %>
+              </div>
+              <div class = "readmore">
+                <em><%= link_to 'Read More', blog %></em>
+              </div>
+              <br>
+              <br>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
     <div id = "sermons" class = "tab">sermons will go here</div>
     <div id = "poems" class = "tab">poems will go here</div>
   </div>
