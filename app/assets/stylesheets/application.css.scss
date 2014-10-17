@@ -500,7 +500,7 @@ h1{
 	font-weight: bold;
 }
 
-.bloglist ul{
+.bloglist div{
   margin-top: 20px;
   padding: 20px;
   list-style: none;
@@ -525,7 +525,7 @@ h1{
     content:'';
 }
 
-.tab-links li {
+.tab-links td {
     float:left;
     list-style:none;
     background-color: #ddebe1;
@@ -542,12 +542,12 @@ h1{
     .tab-links a:hover {
         text-decoration:none;
     }
-li.active {
+td.active {
   margin-top: 0px;
   border: 1px solid lightgray;
   border-bottom: none;
 }
-li.active a, li.active a:hover {
+td.active a, td.active a:hover {
   background-color: #f5f5f5;
   color:  rgb(80, 80, 80)
 
