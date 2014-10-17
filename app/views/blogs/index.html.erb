@@ -36,7 +36,9 @@
 
   <div class = "tab-content">
     <div id ="essays" class = "tab active">  
-      <% @blogs.each do |blog| %>
+      <table>
+        <body>
+    <% @blogs.each do |blog| %>
     <tr>
       <td class = 'blogindex'>
         <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
@@ -55,7 +57,11 @@
         <br>
       </td>
     </tr>
-    <% end %> --></div>
+    <% end %> -->
+  </tbody>
+</table>
+
+  </div>
     <div id = "sermons" class = "tab">sermons will go here</div>
     <div id = "poems" class = "tab">poems will go here</div>
   </div>
