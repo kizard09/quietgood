@@ -57,7 +57,7 @@ $(document).ready(function() {
         $('.bloglist ' + currentAttrValue).show().siblings().hide();
  
         // Change/remove current tab to active
-        $(this).parent('li').addClass('active').siblings().removeClass('active');
+        $(this).parent('td').addClass('active').siblings().removeClass('active');
     });
 });
 
