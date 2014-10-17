@@ -48,8 +48,32 @@
         </tbody>
       </table>
     </div>
-    <div id = "sermons" class = "tab">sermons will go here</div>
-    <div id = "poems" class = "tab">poems will go here</div>
+    <div id = "sermons" class = "tab">
+      <table>
+        <tbody>
+          <% @blogs.each do |blog| %>
+          <tr>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+    <div id = "poems" class = "tab">
+              <table>
+        <tbody>
+          <% @blogs.each do |blog| %>
+          <tr>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
 
