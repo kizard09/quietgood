@@ -25,26 +25,40 @@
         </h6>
       </td>
     </tr>
-    <% @blogs.each do |blog| %>
-    <tr>
-      <td class = 'blogindex'>
-        <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-        <em><%= blog.date %></em>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class = 'ellipsis'>
-          <%= blog.post.html_safe %>
+    <div class = "bloglist">
+      <ul class = "tab-links">
+        <li class= "active"><a href = "#essays">Essays</a></li>
+        <li><a href = "#sermons">Sermons</a></li>
+        <li><a href = "#poems">Poems</a></li>
+      </ul>
+
+      <div class = "tab-content">
+        <div id ="essays" class = "tab active">
+
+        <% @blogs.each do |blog| %>
+        <tr>
+          <td class = 'blogindex'>
+            <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            <em><%= blog.date %></em>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class = 'ellipsis'>
+              <%= blog.post.html_safe %>
+            </div>
+            <div class = "readmore">
+              <em><%= link_to 'Read More', blog %></em>
+            </div>
+            <br>
+            <br>
+          </td>
+        </tr>
+        <% end %>
+          <div id = "sermons" class = "tab">sermons will go here</div>
+          <div id = "poems" class = "tab">poems will go here</div>
         </div>
-        <div class = "readmore">
-          <em><%= link_to 'Read More', blog %></em>
-        </div>
-        <br>
-        <br>
-      </td>
-    </tr>
-    <% end %>
+      </div>
   </tbody>
 </table>
 

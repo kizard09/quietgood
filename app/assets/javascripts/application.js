@@ -49,3 +49,15 @@ $(document).ready(function(){
 
 $('.carousel').carousel()
 
+$(document).ready(function() {
+    $('.bloglist .tab-links a').click(function() {
+        var currentAttrValue = $(this).attr('href');
+ 
+        // Show/Hide Tabs
+        $('.bloglist ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        $(this).parent('li').addClass('active').siblings().removeClass('active');
+    });
+});
+
