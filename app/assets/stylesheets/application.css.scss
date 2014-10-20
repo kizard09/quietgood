@@ -563,8 +563,9 @@ li.active a, li.active a:hover {
     color:rgb(80, 80, 80);
     font-family: "Helvetica Neue";
     margin-top: -5px;
-
     overflow: scroll;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
  
 .tab {

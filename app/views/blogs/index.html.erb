@@ -40,7 +40,7 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <% if blog.id ==4 || blog.id == 2 %>
+            <% if blog.id == 4 || blog.id == 2 || blog.id == 6%>
             <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
@@ -55,11 +55,11 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <td class = 'blogindex'>
             <% if blog.id == 5 || blog.id == 1 %>
+            <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
-             <% end %>
+            <% end %>
           </tr>
           <% end %>
         </tbody>
