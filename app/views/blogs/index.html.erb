@@ -41,11 +41,10 @@
           <% @blogs.each do |blog| %>
           <tr>
             <td class = 'blogindex'>
-              <% if blog.id ==5 %>
+<!--               <% if blog.id ==5 %> -->
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-
-            <% end %>
-                        </td>
+<!--             <% end %> -->
+            </td>
           </tr>
           <% end %>
         </tbody>
