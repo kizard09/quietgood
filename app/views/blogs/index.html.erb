@@ -40,7 +40,7 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <% if blog.id == 4 || blog.id == 2 || blog.id == 6%>
+            <% if blog.id == 2 || blog.id == 6 || blog.id == 8 || blog.id == 9%>
             <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
@@ -55,7 +55,7 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <% if blog.id == 5 || blog.id == 1 %>
+            <% if blog.id == 4 || blog.id == 5 || blog.id == 1 || blog.id == 10 %>
             <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
@@ -70,7 +70,7 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <% if blog.id == 3 %>
+            <% if blog.id == 3 || blod.id == 7 %>
             <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
