@@ -649,6 +649,12 @@ h5, h1, h6 {
 	white-space: wrap;
 	word-wrap: break-word;
 }
+.tab-links li {
+	width:65px;
+}
+.tab-links a {
+	font-size: 12px;
+}
 }
 
 @media only handheld {
