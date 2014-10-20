@@ -70,8 +70,8 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <td class = 'blogindex'>
             <% if blog.id == 3 %>
+            <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
             <% end %>
