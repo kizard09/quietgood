@@ -48,7 +48,18 @@
         </tbody>
       </table>
     </div>
-    <div id = "sermons" class = "tab">Coming Soon!
+    <div id = "sermons" class = "tab">
+       <table>
+        <tbody>
+          <%  for @blogs.user_id == 5 %>
+          <tr>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>Coming Soon!
     </div>
     <div id = "poems" class = "tab">Coming Soon!  
     </div>
