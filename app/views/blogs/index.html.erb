@@ -41,25 +41,17 @@
           <% @blogs.each do |blog| %>
           <tr>
             <td class = 'blogindex'>
+              <% if blog.id ==5 %>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
+            <% end %>
           </tr>
           <% end %>
         </tbody>
       </table>
     </div>
     <div id = "sermons" class = "tab">
-       <table>
-        <tbody>
-          <%  for @blogs.id == 5 %>
-          <tr>
-            <td class = 'blogindex'>
-              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-            </td>
-          </tr>
-          <% end %>
-        </tbody>
-      </table>Coming Soon!
+ 
     </div>
     <div id = "poems" class = "tab">Coming Soon!  
     </div>
