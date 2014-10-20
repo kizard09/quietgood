@@ -40,20 +40,45 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
+            <% if blog.id ==4 || 2 %>
             <td class = 'blogindex'>
-
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
-
             </td>
+             <% end %>
           </tr>
           <% end %>
         </tbody>
       </table>
     </div>
     <div id = "sermons" class = "tab">
- 
+      <table>
+        <tbody>
+          <% @blogs.each do |blog| %>
+          <tr>
+            <% if blog.id ==5 || 1 %>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            </td>
+             <% end %>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
     </div>
-    <div id = "poems" class = "tab">Coming Soon!  
+    <div id = "poems" class = "tab">
+      <table>
+        <tbody>
+          <% @blogs.each do |blog| %>
+          <tr>
+            <% if blog.id == 3 %>
+            <td class = 'blogindex'>
+              <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
+            </td>
+            <% end %>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
