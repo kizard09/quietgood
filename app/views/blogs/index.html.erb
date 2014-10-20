@@ -70,7 +70,7 @@
         <tbody>
           <% @blogs.each do |blog| %>
           <tr>
-            <% if blog.id == 3 || blod.id == 7 %>
+            <% if blog.id == 3 || blog.id == 7 %>
             <td class = 'blogindex'>
               <b><%= link_to blog.name, blog %></b>, by <%= blog.author %> 
             </td>
