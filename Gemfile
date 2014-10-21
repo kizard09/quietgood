@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 gem 'carrierwave'
 
+gem 'jquery-turbolinks'
+
 gem 'devise'
 
 gem 'figaro'
