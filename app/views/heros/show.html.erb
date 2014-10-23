@@ -1,11 +1,6 @@
 
-<% content_for :head do %>
-  <meta property="og:url" content="<%= "http://quietgood.org" + hero_path(@hero) %>" /> 
-  <meta property="og:title"  content="<%= @hero.name %>" /> 
-  <meta property="og:image"  content="<%= image_tag(@hero.image_url) if @hero.image.present? %>" /> 
-  <meta property="og:description"  content="<%= simple_format(@hero.post).html_safe %>" /> 
-  <meta property="og:type" content="blog"/>
-<% end %>
+<p id="notice"><%= notice %></p>
+
 <h1 class = 'heroshowtitle'><%= @hero.name %></h1>
 <br>
 <div class = 'heroshow'>
@@ -23,4 +18,7 @@
 
 </div>
 
+
+
+<!-- #where blog writer from --> 
 
