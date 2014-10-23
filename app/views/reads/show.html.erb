@@ -1,5 +1,7 @@
-<p id="notice"><%= notice %></p>
 
+<% content_for :head do %>
+  <meta property="og:title"  content="<%= @read.name %>" /> 
+<% end %>
 <h1 class = 'readshowtitle'><%= @read.name %></h1>
 <br>
 
