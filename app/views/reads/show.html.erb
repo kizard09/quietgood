@@ -1,7 +1,7 @@
 
 <% content_for :head do %>
   <meta property="og:title"  content="Good Read: <%= @read.name %>" /> 
-   <meta property="og:description"  content="<%= @read.synopsis %>" /> 
+   <meta property="og:description"  content="<%= simple_format(@read.synopsis) %>" /> 
 <% end %>
 <h1 class = 'readshowtitle'><%= @read.name %></h1>
 <br>
