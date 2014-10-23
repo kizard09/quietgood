@@ -576,14 +576,14 @@ li.active a, li.active a:hover {
 .tab.active {
   display:block;
 }
-a.facebook {
+.facebook {
 	background-color: #0047B2;
 	border-radius: 10px;
 	background-size: 15px 15px;
 	color: white;
 	font-weight: bold;
 }
-a.facebook :hover{
+.facebook a:hover{
 	box-shadow: 1px 2px 1px gray;
 }
 @media only screen and (max-width: 835px) {
