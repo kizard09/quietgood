@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-gem 'carrierwave'
+gem 'carrierwave'      
+ruby '2.0.0'
 
 gem 'jquery-turbolinks'
 
