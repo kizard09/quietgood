@@ -1,9 +1,6 @@
 <% content_for :head do %>
-  <meta property="og:url" content="<%= "http://quietgood.org" + blog_path(@blog) %>" /> 
   <meta property="og:title"  content="<%= @blog.name %>" /> 
-  <meta property="og:image"  content="<%= image_tag(@blog.image_url) if @blog.image.present? %>" /> 
-  <meta property="og:description"  content="<%= simple_format(@blog.post).html_safe %>" /> 
-  <meta property="og:type" content="blog"/>
+  <meta property="og:description"  content="<%= simple_format(@blog.post) %>" /> 
 <% end %>
 <h1 class = 'blogshowtitle'><%= @blog.name %></h1><br><br>
 
@@ -19,9 +16,6 @@
     <%= simple_format(@blog.post).html_safe %>
   </div>
   <p class = "back"><%= link_to 'Back', blogs_path %></p>
-<!--   <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
-  Share on Facebook
-</a> -->
 </div>
 
 
