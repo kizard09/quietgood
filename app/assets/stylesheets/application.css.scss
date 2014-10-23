@@ -576,10 +576,19 @@ li.active a, li.active a:hover {
 .tab.active {
   display:block;
 }
-.facebook{
+.facebook a{
 	background-color: #0047B2;
 	border-radius: 10px;
 	background-size: 15px 15px;
+	color: white;
+	font-weight: bold;
+}
+.facebook a:hover{
+	background-color: #0047B2;
+	border-radius: 10px;
+	background-size: 15px 15px;
+	color: white;
+	font-weight: bold;
 }
 @media only screen and (max-width: 835px) {
 #navigation {
