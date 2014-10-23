@@ -1,7 +1,7 @@
 <% content_for :head do %>
   <meta property="og:url" content="<%= "http://quietgood.org" + blog_path(@blog) %>" /> 
-  <meta property="og:title"  content="Sample" /> 
-  <meta property="og:image"  content="https://fbstatic-a.akamaihd.net/images/devsite/attachment_blank.png" /> 
+  <meta property="og:title"  content="<%= @blog.name %>" /> 
+  <meta property="og:image"  content="<%= image_tag(@blog.image_url) if @blog.image.present? %>" /> 
 <% end %>
 <h1 class = 'blogshowtitle'><%= @blog.name %></h1><br><br>
 
