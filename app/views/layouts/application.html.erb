@@ -8,7 +8,7 @@
  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
  <%= favicon_link_tag 'Quietgoodfavicon.ico' %>
- <meta property="og:title" content="The good"/>
+ <%= content_for?(:head) ? yield(:head) : '' %>
 </head>
 <body>
 <!-- Facebook -->
@@ -82,7 +82,6 @@
 <div id = "fore">
 
 <%= yield %>
-<div class="fb-share-button" data-href="http://quietgood.org"></div>
 </div>
 
 </body>
