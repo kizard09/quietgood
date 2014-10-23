@@ -16,7 +16,8 @@
 		<div class 'herosecondimage'><%= image_tag(@hero.secondimage_url) if @hero.secondimage.present? %>
 		</div>
 	<span class = "facebook" >
-	<a href = "http://www.facebook.com/share.php?u=http://quietgood.org/heros/<%= @read.id%>"> o </a>
+		Share:
+	<a href = "http://www.facebook.com/share.php?u=http://quietgood.org/heros/<%= @hero.id%>"> o </a>
 </span>
 	<br>
 	<p class = "back"><%= link_to 'Back', heros_path %></p>
