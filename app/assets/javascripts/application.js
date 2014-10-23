@@ -10,11 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require turbolinks
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 
 
@@ -25,7 +25,6 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-
 
 var originalNavClasses;
 
