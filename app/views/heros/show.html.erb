@@ -1,7 +1,7 @@
 
 <% content_for :head do %>
   <meta property="og:title"  content="Community Hero: <%= @hero.name %>" /> 
-  <meta property="og:description"  content="<%= simple_format(@hero.description) %>" /> 
+  <meta property="og:description"  content="<%= @hero.description %>" /> 
 <% end %>
 <h1 class = 'heroshowtitle'><%= @hero.name %></h1>
 <br>
