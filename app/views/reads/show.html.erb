@@ -1,5 +1,11 @@
 <p id="notice"><%= notice %></p>
-
+<% content_for :head do %>
+  <meta property="og:url" content="<%= "http://quietgood.org" + read_path(@read) %>" /> 
+  <meta property="og:title"  content="<%= @read.name %>" /> 
+  <meta property="og:image"  content="<%= image_tag(@read.image_url) if @read.image.present? %>" /> 
+  <meta property="og:description"  content="<%= simple_format(@read.post).html_safe %>" /> 
+  <meta property="og:type" content="blog"/>
+<% end %>
 <h1 class = 'readshowtitle'><%= @read.name %></h1>
 <br>
 
