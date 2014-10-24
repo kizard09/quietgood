@@ -2,7 +2,9 @@
 <html>
 <head>
 	<title>QuietGood</title>
-	<meta name="description" content="QuietGood | Sharing kind words, thoughtful gestures, creative ideas and powerful actions that infuse life with meaning and joy">
+	<meta name = "og:title" content = "QuietGood"/>
+	<meta name="og:description" content="QuietGood | Sharing kind words, thoughtful gestures, creative ideas and powerful actions that infuse life with meaning and joy"/>
+	<meta name = "og:image" content = "/assets/images/PrayerFlad2.jpeg"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -10,7 +12,7 @@
 	<%= content_for?(:head) ? yield(:head) : '' %>
 </head>
 <body>
-	
+
 <!-- Navigation -->
 <h1 class = "header"><a href = "/home">quiet<strong>good</strong></a></h1>
 <nav id="navigation">
