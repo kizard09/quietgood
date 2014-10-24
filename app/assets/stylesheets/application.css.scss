@@ -410,7 +410,6 @@ div#myCarousel.carousel.slide {
 	display: -moz-deck;
 }
 .back{
-	margin-left: 10px;
 	color: #000066;
 }
 .back:hover{
@@ -473,7 +472,7 @@ td, th {
 	color: #000066;
 	padding-top: 10px;
 }
-.welcome, .tibetancaption, h4, h3, .ellipsis, .blogindex, a.ellipsis, .fb-share-button {
+.welcome, .tibetancaption, h4, h3, .ellipsis, .quote, .blogindex, a.ellipsis, .fb-share-button {
 	padding-left: 10px;
 	padding-bottom: 10px;
 }
@@ -578,10 +577,11 @@ li.active a, li.active a:hover {
 }
 .facebook {
 	background-image: url('96x96-Circle-56-FB.png');
-	background-size: 20px 20px;
+	background-size: 30px 30px;
 	font-size: 38px;
 	background-repeat: no-repeat;
-	padding-left: 10px;
+	left: 20px;
+	margin-left: 10px;
 }
 .facebook a{
 	color:transparent;
@@ -589,7 +589,7 @@ li.active a, li.active a:hover {
 
 @media only screen and (max-width: 835px) {
 #navigation {
-   	background-color: red;
+   	ground-color: red;
     border-radius: 110px;
     height: 100px;
     width: 100px;
