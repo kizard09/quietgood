@@ -10,7 +10,6 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery.turbolinks
@@ -19,14 +18,7 @@
 //= require_tree .
 
 
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-FB.XFBML.parse();
+
 
 var originalNavClasses;
 
@@ -71,4 +63,11 @@ $(document).ready(function() {
         $(this).parent('li').addClass('active').siblings().removeClass('active');
     });
 });
-
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+FB.XFBML.parse();
