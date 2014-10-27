@@ -74,11 +74,17 @@ button:hover, .homemailing a:hover {
 	background-color: transparent;
 }
 .homemailing{
-	background: white;
-	font-weight: 100;
+
+
 	font-family: "HelveticaNeue-Light", "Helvetica"
 	font-size: 15px;
 	border-radius: 15px;
+}
+.homemailing a{
+	background: white;
+	font-weight: 100;
+
+
 }
 
 .btn {
