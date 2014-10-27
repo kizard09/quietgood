@@ -65,7 +65,7 @@ button:hover, .homemailing a:hover {
 .here a, .homemailing {
 	color: red;
 }
-.here a:hover, .homemailing{
+.here a:hover, .homemailing:hover{
 	font-weight: bold;
 }
 
@@ -76,7 +76,7 @@ button:hover, .homemailing a:hover {
 }
 a.homemailing{
 	font-family: "HelveticaNeue-Light", "Helvetica";
-	font-size: 15px;
+	font-size: 18px;
 	border-radius: 15px;
 	color:red;
 }
