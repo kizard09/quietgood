@@ -44,7 +44,7 @@ button.btn.btn-default{
 
 }
 
-button {
+button, .homemailing{
 	border: none;
 	border-radius: 110px;
 	opacity: 0.7;
@@ -53,7 +53,7 @@ button {
 	background-color: white;	
 }
 
-button:hover {
+button:hover, .homemailing a:hover {
 	opacity: 1;
 	text-decoration: none;
 }
@@ -62,14 +62,14 @@ button:hover {
 	margin-bottom: auto;
 	margin-top: auto;
 }
-.here a{
+.here a, .homemailing {
 	color: red;
 }
-.here a:hover{
+.here a:hover, .homemailing{
 	font-weight: bold;
 }
 
-.here a:hover, #fore a{
+.here a:hover, #fore a, .homemailing{
 	text-decoration: none;
 	background-color: transparent;
 }
